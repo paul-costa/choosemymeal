@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <title>Food Chooser</title>
+  </head>
+  <body>
+
+
+  <div class="container">
+      <div class="row">
+        <div class="col-12 p-4 text-center">
+          <h3>Food Chooser</h3>
+        </div>
+      </div>
+    
+    <div class="row">
+      <div class="col-md-6 col-sm-12 p-2 text-center">
+        <input class="form-control" id="submitInputField" placeholder="Food I may eat today"></input>
+      </div>
+      <div class="col-md-6 col-sm-12 p-2 text-center">
+        <button class="btn btn-block btn-dark" id="submitButton" onclick="insertStringIntoArray();">add to list</button>
+      </div>
+    </div>
+
+    <div class="row p-2">
+      <div class="col-12 text-center" id="listWithFoods">
+        so empty...
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12 p-2 text-center">
+        <button class="btn btn-block btn-dark" id="chooseButton" onclick="chooseMyFood();">I'm feeling lucky!</button>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="offset-md-3 col-md-6 offset-sm-3 col-sm-6 p-2 text-center" id="foodResult">
+  
+        </div>
+      </div>
+  </div>
+  </body>
+</html>
